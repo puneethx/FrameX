@@ -27,6 +27,14 @@
         align-items: center;
         gap: 4vw;
         margin-right: 4vw;
+        position: relative;
+        .title{
+            position: absolute;
+            top: 0.75vh;
+            font-size: 30px;
+            left: 3vw;
+            font-weight: bold;
+        }
         .left {
             .rightUl {
                 display: flex;

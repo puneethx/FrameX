@@ -1,3 +1,30 @@
 .Home{
-    
+    width: 100%;
+    margin-bottom: 20vh;
+    .tagline{
+        font-size: 40px;
+        margin-top: 10vh;
+        margin-left: 10vw;
+        margin-bottom: 5vh;
+    }
+    .mid{
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .images{
+            margin-top: 4vh;
+            img{
+                margin-right: 4vw;
+            }
+        }
+    }
+    .companies{
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
