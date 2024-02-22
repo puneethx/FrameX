@@ -6,7 +6,7 @@ const signIn = () => {
   const navigate = useNavigate();
   const handleSubmit = event => {
     event.preventDefault();
-    navigate('/home');
+    navigate('/');
   };
   return (
     <div className='application'>
