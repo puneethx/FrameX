@@ -1,0 +1,38 @@
+.application{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4dvh auto;
+    width: 98dvw;
+    h1{
+        margin: 30px auto;
+    }
+    .forml{
+        height: fit-content;
+        width: fit-content;
+        background-color: rgb(61, 61, 61);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 6dvh 6dvw 6dvh;
+        margin: 0px auto 64px;
+        input, textarea{
+            margin-bottom: 12px;
+            height: 30px;
+            width: 20dvw;
+            border-radius: 8px;
+            padding: 2px 12px;
+            border: none;
+            background-color: rgb(244, 244, 244);
+            color: black;
+            font-family: "poppins";
+            font-size: medium;
+        }
+        .submit-btn{
+            background-color: #597EAF;
+            color: white;
+            font-weight: bold;
+            height: 36px;
+        }
+    }
+}
