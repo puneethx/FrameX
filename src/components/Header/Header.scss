@@ -33,8 +33,11 @@
                 gap: 2vw;
                 list-style: none;
                 li{
-                    color: white;
+                    color: grey;
                     text-decoration: none;
+                }
+                li:hover{
+                    color: white;
                 }
             }
         }

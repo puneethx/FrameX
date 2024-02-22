@@ -1,0 +1,132 @@
+.Internship{
+    display: flex;
+    width: 100%;
+    .left{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 10vh;
+        .search{
+            padding: 8px 12px;
+            position: absolute;
+            border-radius: 20px;
+            background-color: black;
+            right: 5vw;
+            top: 5vh;
+            height: fit-content;
+            input{
+                background-color: black;
+                border: none;
+                float: right;
+                outline: none;
+                font-family: "poppins";
+                width: 7.5vw;
+            }
+        }
+        .card{
+            width: 65vw;
+            padding-bottom: 4vh;
+            margin-top: 5vh;
+            border-radius: 10px;
+            background-color: #252525;
+            .top{
+                display: flex;
+                justify-content: space-between;
+                margin: 3vh 5vh 0vh 5vh;
+                .topleft{
+                    padding: 4px 12px;
+                    background-color: black;
+                    border-radius: 20px;
+                }
+                .topright{
+                    display: flex;
+                    gap: 2vw;
+                }
+            }
+            .midtop{
+                line-height: 0;
+                margin: 1vh 5vh 0vh 5vh;
+                .midtopleft{
+                    display: flex;
+                    flex-direction: column;
+                    .midtopleft1{
+                        p{
+                            font-weight: bolder;
+                            font-size: 18px;
+                        }
+                    }
+                    .midtopleft2{
+                        font-size: 12px;
+                        color: rgb(126, 126, 126);
+                    }
+                }
+            }
+            .mid{
+                margin: 3vh 5vh 0vh 5vh;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                margin: 4vh 5vh 0vh 5vh;
+                .bottomleft{
+                    display: flex;
+                    gap: 5vw;
+                }
+                .bottomright{
+                    .bottomBut{
+                        padding: 7px 20px;
+                        background-color: black;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1;
+        display: flex;
+        margin-top: 11vh;
+        .filterdiv{
+            background-color: #252525;
+            height: fit-content;
+            margin-top: 4vh;
+            margin-right: 4vh;
+            border-radius: 10px;
+            .filter{
+                margin-top: 4vh;
+                margin-left: 1vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 30px;
+                border-radius: 20px;
+                background-color: black;
+            }
+        }
+        .keys{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 4vh;
+            margin-left: 1vw;
+            gap: 1vh;
+            .key{
+                padding: 7px 12px;
+                background-color: rgb(60, 60, 60);
+                border-radius: 20px;
+            }
+        }
+        .apply{
+            padding: 5px 20px;
+            background-color: var(--button);
+            width: fit-content;
+            border-radius: 20px;
+            margin-top: 4vh;
+            margin-left: 1vw;
+            margin-bottom: 4vh;
+        }
+    }
+}
