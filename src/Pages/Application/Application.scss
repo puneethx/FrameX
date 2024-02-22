@@ -1,0 +1,45 @@
+.application{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4dvh auto;
+    width: 99dvw;
+
+    .main-head{
+        margin: 10dvh auto 2dvh;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .forml{
+        height: fit-content;
+        width: fit-content;
+        background-color: rgb(61, 61, 61);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        padding: 6dvh 6dvw 6dvh;
+        margin: 0px auto;
+        input, textarea{
+            margin-bottom: 12px;
+            height: 30px;
+            width: 20dvw;
+            border-radius: 8px;
+            padding: 2px 12px;
+            border: none;
+            background-color: rgb(244, 244, 244);
+            color: black;
+            font-family: "poppins";
+            font-size: medium;
+        }
+        select{
+            width: 200px;
+            height: 36px;
+            padding-left: 12px;
+            font-family: "poppins";
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: white;
+            color: black;
+        }
+    }
+}

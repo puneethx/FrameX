@@ -2,7 +2,7 @@ import React from 'react'
 
 const Placement = () => {
   return (
-    <div>Placement</div>
+    <div className='placement'>Placement</div>
   )
 }
 
