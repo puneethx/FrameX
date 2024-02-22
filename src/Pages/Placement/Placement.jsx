@@ -260,6 +260,7 @@ const Placement = () => {
                     </div>
                 </div>
             </div>
+            <h1>Testimonials</h1>
             <div className="cards">
                 <div className="card">
                     <div className="cardtop">
@@ -286,7 +287,7 @@ const Placement = () => {
                         </div>
                         <div className="cardright">
                             <p className='name'>Rahul Tripati</p>
-                            <p className='grey'>Business Development Associate,</p>
+                            <p className='grey'>Business Development</p>
                             <p className="grey">Motilal Oswal and sons</p>
                         </div>
                     </div>

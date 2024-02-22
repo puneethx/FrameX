@@ -21,9 +21,9 @@
             .search {
                 padding: 8px 12px;
                 position: absolute;
-                border-radius: 20px;
+                border-radius: 8px;
                 background-color: black;
-                right: 5vw;
+                left: 5vw;
                 top: 5vh;
                 height: fit-content;
 
@@ -166,9 +166,9 @@
 
     .cards {
         display: flex;
-        gap: 2vw;
+        gap: 3vw;
         z-index: 1;
-        margin-top: 34vh;
+        margin-top: 2vh;
         margin-left: 18vw;
         flex-wrap: wrap;
 
