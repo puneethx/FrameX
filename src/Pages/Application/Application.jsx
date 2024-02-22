@@ -37,7 +37,7 @@ const Application = () => {
           Resume<br></br>
           <input type='file'/>
         </label><br></br>
-        
+        <input className='submit-btn' type='submit' value="Upload"/>
       </form>
     </div>
     </>
