@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     margin-bottom: 10vh;
+    
     .left{
         flex: 3;
         display: flex;
@@ -10,12 +11,13 @@
         align-items: center;
         position: relative;
         padding-top: 10vh;
-        .search{
+        .search-btn{
             padding: 8px 12px;
             position: absolute;
-            border-radius: 20px;
+            border-radius: 8px;
             background-color: black;
-            right: 5vw;
+            left: 5vw;
+            right: 5dvw;
             top: 5vh;
             height: fit-content;
             input{

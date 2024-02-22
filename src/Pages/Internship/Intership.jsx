@@ -6,7 +6,7 @@ const Intership = () => {
   return (
     <div className='Internship'>
       <div className="left">
-        <div className="search">
+        <div className="search-btn">
           <input type="text" placeholder='search' />
         </div>
         <div className="card">
