@@ -1,6 +1,7 @@
 .Internship{
     display: flex;
     width: 100%;
+    margin-bottom: 10vh;
     .left{
         flex: 3;
         display: flex;
@@ -20,7 +21,6 @@
             input{
                 background-color: black;
                 border: none;
-                float: right;
                 outline: none;
                 font-family: "poppins";
                 width: 7.5vw;
