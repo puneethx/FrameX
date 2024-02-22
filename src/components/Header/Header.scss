@@ -1,0 +1,61 @@
+.header {
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    border-bottom: 1px solid rgba(122, 122, 122, 0.3);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-image: url("../../assets/header-back.png");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        -webkit-backdrop-filter: saturate(180%) blur(90px);
+        backdrop-filter: saturate(180%) blur(20px);
+        z-index: -999;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 4vw;
+        margin-right: 4vw;
+        .left {
+            .rightUl {
+                display: flex;
+                gap: 2vw;
+                list-style: none;
+                li{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .right{
+            list-style: none;
+            li{
+                color: rgb(255, 255, 255);
+                padding: 5px 15px;
+                background-color: var(--button);
+                border-radius: 7px;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 854px) {
+    .header {
+        height: 9vh;
+        background-image: url("../Images/nav-back-phone.png");
+        width: 100vw;
+    }
+}
