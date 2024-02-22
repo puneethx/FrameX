@@ -10,7 +10,7 @@ const signIn = () => {
   };
   return (
     <div className='application'>
-      <h1>Log In</h1>
+      <h1>Welcome to JobVista</h1>
       <form className='forml' onSubmit={handleSubmit}>
         <label>
           Email<br></br>
