@@ -1,3 +1,41 @@
 .placement{
-    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .placeimg{
+        position: absolute;
+        top: 0;
+        left: 16vw;
+    }
+    .cards{
+        display: flex;
+        gap: 2vw;
+        z-index: 1;
+        margin-top: 34vh;
+        margin-left: 18vw;
+        flex-wrap: wrap;
+        .card{
+            width: 18vw;
+            padding: 4vh;
+            border-radius: 10px;
+            margin-bottom: 10vh;
+            background-color: #252525;
+            .cardtop{
+                display: flex;
+                line-height: 0;
+                .cardright{
+                    font-size: 14px;
+                    margin-left: 7.5px;
+                    .grey{
+                        font-size: 12px;
+                        color: rgb(163, 163, 163);
+                    }
+                }
+            }
+            .cardmain{
+                font-size: 14px;
+            }
+        }
+    }
 }
