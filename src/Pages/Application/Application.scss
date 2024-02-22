@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 4dvh auto;
+    margin: 4dvh auto 8dvh;
     width: 99dvw;
 
     .main-head{
@@ -30,6 +30,12 @@
             color: black;
             font-family: "poppins";
             font-size: medium;
+        }
+        .submit-btn{
+            background-color: #597EAF;
+            color: white;
+            font-weight: bold;
+            height: 36px;
         }
         select{
             width: 200px;

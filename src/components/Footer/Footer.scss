@@ -1,0 +1,22 @@
+.main-footer{
+position:relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+    .footer-box{
+        width: 20dvw;
+        height: fit-content;
+        h1{
+            font-style: italic;
+        }
+        p{
+            opacity: 60%;
+        }
+        // background-color: aqua;
+    }
+}
