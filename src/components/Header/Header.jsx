@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <div className='header' >
             <div className="wrapper">
+                <div className='title'>JobVista</div>
                 <div className="left">
                     <ul className='rightUl'>
                         <Link to="/"><li>Home</li></Link>
