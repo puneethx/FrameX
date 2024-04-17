@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import "./Placement.scss"
 import Place from "../../assets/placements.png"
 import male from "../../assets/male.svg"
 import Filter from "../../assets/filter.svg"
+import axios from 'axios';
 
 const Placement = () => {
+    const [jobs, setJobs] = useState([]);
+
+    useEffect(() => {
+        fetchJobs();
+    }, []);
+
+    const fetchJobs = async () => {
+        try {
+            const response = await axios.get('https://jobvista-gofiber-production.up.railway.app/jobs');
+            setJobs(response.data.data.data);
+            console.log(response.data.data.data)
+        } catch (error) {
+            console.error('Error fetching jobs:', error);
+        }
+    };
     return (
         <div className='placement'>
             <img src={Place} className='placeimg' alt="placement" />
@@ -13,63 +29,65 @@ const Placement = () => {
                     <div className="search">
                         <input type="text" placeholder='search' />
                     </div>
-                    <div className="card">
-                        <div className="top">
-                            <div className="topleft">
-                                Top Recruiting
+                    {jobs.map((item, key) =>
+                        <div className="card" key={key}>
+                            <div className="top">
+                                <div className="topleft">
+                                    Top Recruiting
+                                </div>
+                                <div className="topright">
+                                    <div>{item.location}</div>
+                                    <div>{item.duration}</div>
+                                </div>
                             </div>
-                            <div className="topright">
-                                <div>Hyderabad</div>
-                                <div>2 Weeks ago</div>
+                            <div className="midtop">
+                                <div className="midtopleft">
+                                    <div className="midtopleft1">
+                                        <p>{item.job_title}</p>
+                                    </div>
+                                    <div className="midtopleft2">
+                                        {item.company}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mid">
+                                <p>{item.job_des}</p>
+                            </div>
+                            <div className="bottom">
+                                <div className="bottomleft">
+                                    <div className="bottom1">
+                                        <div className="bottomtop">
+                                            Last Date to Apply
+                                        </div>
+                                        <div className="bottomdown">
+                                            {item.last_date}
+                                        </div>
+                                    </div>
+                                    <div className="bottom2">
+                                        <div className="bottomtop">
+                                            Start Date
+                                        </div>
+                                        <div className="bottomdown">
+                                            {item.start_date}
+                                        </div>
+                                    </div>
+                                    <div className="bottom3">
+                                        <div className="bottomtop">
+                                            Expected CTC
+                                        </div>
+                                        <div className="bottomdown">
+                                            {item.salary}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="bottomright">
+                                    <div className="bottomBut">
+                                        View Details
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div className="midtop">
-                            <div className="midtopleft">
-                                <div className="midtopleft1">
-                                    <p>Bussiness Development Associate</p>
-                                </div>
-                                <div className="midtopleft2">
-                                    Motilal Oswal and sons
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mid">
-                            <p>Join Motilal Oswal and Sons as a Business Development Associate intern, where you'll contribute to market analysis, client engagement, and strategic business planning. Gain hands-on experience in the dynamic world of finance, collaborating with industry experts to shape the future of investment and wealth management. Elevate your career with this exciting opportunity to learn, grow, and make an impact.</p>
-                        </div>
-                        <div className="bottom">
-                            <div className="bottomleft">
-                                <div className="bottom1">
-                                    <div className="bottomtop">
-                                        Last Date to Apply
-                                    </div>
-                                    <div className="bottomdown">
-                                        24/02/24
-                                    </div>
-                                </div>
-                                <div className="bottom2">
-                                    <div className="bottomtop">
-                                        Start Date
-                                    </div>
-                                    <div className="bottomdown">
-                                        2nd March 2024
-                                    </div>
-                                </div>
-                                <div className="bottom3">
-                                    <div className="bottomtop">
-                                        Expected CTC
-                                    </div>
-                                    <div className="bottomdown">
-                                        50K-60K
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bottomright">
-                                <div className="bottomBut">
-                                    View Details
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    )}
                     <div className="card">
                         <div className="top">
                             <div className="topleft">
