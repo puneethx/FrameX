@@ -70,7 +70,7 @@ const Intership = () => {
                 </div>
                 <div className="bottom3">
                   <div className="bottomtop">
-                    Expected CTC
+                    Expected Salary
                   </div>
                   <div className="bottomdown">
                     {item.salary}
