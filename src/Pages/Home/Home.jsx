@@ -20,7 +20,7 @@ const Home = () => {
           <img src={img3} alt="img" />
         </div>
         <div className='companies'>
-          Top Comapanies trust us
+          <h2>Top Comapanies trust us</h2>
           <img src={companies} alt="" />
         </div>
       </div>
